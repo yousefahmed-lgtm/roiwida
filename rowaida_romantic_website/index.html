@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10070d" />
+  <meta name="description" content="A little romantic garden made just for Rowaida." />
+  <title>𝓡𝓸𝔀𝓪𝓲𝓭𝓪 | A Little Garden of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Rowaida home"><span class="brand-heart">♡</span><span>Rowaida</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#garden" class="nav-link">The Garden</a>
+      <a href="#our-messages" class="nav-link">Messages</a>
+      <a href="#closing" class="nav-link">A Note</a>
+    </nav>
+    <div class="top-actions">
+      <button class="music-button" id="musicButton" type="button" aria-label="تشغيل أو إيقاف الموسيقى">
+        <span class="music-note">♫</span><span class="music-label">A song for you</span><span id="musicState" class="music-state">▶</span>
+      </button>
+      <button class="icon-button" id="soundButton" type="button" aria-label="كتم أو تشغيل الصوت">♫</button>
+      <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span>✦</span> A LITTLE GIFT, MADE WITH CARE <span>✦</span></p>
+        <div class="name-wrap">
+          <span class="name-ornament ornament-top">❧ ❦ ❧</span>
+          <h1 class="hero-name">Rowaida</h1>
+          <span class="name-ornament ornament-bottom">♡ ─── ♡ ─── ♡</span>
+        </div>
+        <p class="hero-subtitle">Some people make ordinary days feel special.</p>
+        <p class="hero-arabic">وفي ناس وجودها لوحده بيخلّي الدنيا ألطف ♡</p>
+        <a class="primary-button" href="#garden"><span class="button-flower">❀</span> Enter Your Garden <span class="button-arrow">↙</span></a>
+        <div class="hero-footnote"><span class="tiny-line"></span> Made especially for you <span class="tiny-heart">♥</span> <span class="tiny-line"></span></div>
+      </div>
+      <a class="scroll-cue" href="#garden" aria-label="انزل للحديقة"><span></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="garden-section section-shell" id="garden">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span>✦</span> A PLACE FOR YOU <span>✦</span></p>
+        <h2>A Garden of <em>Little Messages</em></h2>
+        <p class="section-description">Every flower holds a little thought from my heart.<br><span>اختاري وردة وافتحي الرسالة اللي جواها ♡</span></p>
+        <div class="divider-flower"><span></span>❀<span></span></div>
+      </div>
+
+      <div class="rose-grid">
+        <button class="rose-card reveal" type="button" data-message="love" aria-label="افتحي وردة الحب">
+          <span class="rose-halo"></span><span class="rose-art rose-red"><span class="rose-bloom">✿</span><span class="rose-stem"></span><span class="rose-leaf leaf-left"></span><span class="rose-leaf leaf-right"></span></span>
+          <span class="rose-title">Love</span><span class="rose-hint">a little feeling</span>
+        </button>
+        <button class="rose-card reveal" type="button" data-message="respect" aria-label="افتحي وردة الاحترام">
+          <span class="rose-halo"></span><span class="rose-art rose-pink"><span class="rose-bloom">✿</span><span class="rose-stem"></span><span class="rose-leaf leaf-left"></span><span class="rose-leaf leaf-right"></span></span>
+          <span class="rose-title">Respect</span><span class="rose-hint">what I admire</span>
+        </button>
+        <button class="rose-card reveal" type="button" data-message="smile" aria-label="افتحي وردة الابتسامة">
+          <span class="rose-halo"></span><span class="rose-art rose-purple"><span class="rose-bloom">✿</span><span class="rose-stem"></span><span class="rose-leaf leaf-left"></span><span class="rose-leaf leaf-right"></span></span>
+          <span class="rose-title">Your Smile</span><span class="rose-hint">a little sunshine</span>
+        </button>
+        <button class="rose-card reveal" type="button" data-message="future" aria-label="افتحي وردة الامنيات">
+          <span class="rose-halo"></span><span class="rose-art rose-gold"><span class="rose-bloom">✿</span><span class="rose-stem"></span><span class="rose-leaf leaf-left"></span><span class="rose-leaf leaf-right"></span></span>
+          <span class="rose-title">A Wish</span><span class="rose-hint">for the days ahead</span>
+        </button>
+        <button class="rose-card reveal" type="button" data-message="special" aria-label="افتحي وردة مميزة">
+          <span class="rose-halo"></span><span class="rose-art rose-crimson"><span class="rose-bloom">✿</span><span class="rose-stem"></span><span class="rose-leaf leaf-left"></span><span class="rose-leaf leaf-right"></span></span>
+          <span class="rose-title">Just You</span><span class="rose-hint">one last little note</span>
+        </button>
+      </div>
+      <p class="garden-footnote">Take your time. There is no rush in a garden. <span>♡</span></p>
+    </section>
+
+    <section class="message-section section-shell" id="our-messages">
+      <div class="message-panel reveal">
+        <div class="panel-sparkle">✧</div>
+        <p class="eyebrow">A FEW WORDS, FROM THE HEART</p>
+        <h2>Not a promise to the future…<br><em>just honesty in the present.</em></h2>
+        <p>مش لازم نعرف بكرة مخبّي لنا إيه، يكفيني إن اللي بينا دلوقتي فيه مودة واحترام، وإننا نتمنى لبعض الخير من قلبنا.</p>
+        <span class="panel-signature">With warmth, always <b>♡</b></span>
+      </div>
+    </section>
+
+    <section class="closing-section section-shell" id="closing">
+      <div class="closing-content reveal">
+        <div class="closing-rose">❦</div>
+        <p class="eyebrow">BEFORE YOU GO</p>
+        <h2>For someone <em>truly special</em></h2>
+        <p class="closing-arabic">يا رويدا، أتمنى أيامك تكون جميلة شبه قلبك،<br>وربنا يكتب لك الخير والفرحة في كل خطوة.</p>
+        <p class="closing-small">Thank you for being you.</p>
+        <button class="letter-button" id="openLetter" type="button">Open one last note <span>♡</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>Made with care</span><span class="footer-heart">♥</span><span>just for Rowaida</span></footer>
+
+  <div class="modal-backdrop" id="messageModal" aria-hidden="true">
+    <article class="message-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" type="button" aria-label="إغلاق">×</button>
+      <div class="modal-flower">❦</div>
+      <p class="modal-eyebrow">A MESSAGE FOR YOU</p>
+      <h2 id="modalTitle">A little thought</h2>
+      <p class="modal-copy" id="modalCopy"></p>
+      <span class="modal-divider">─── ♡ ───</span>
+      <button class="modal-done" id="modalDone" type="button">Keep this in your heart</button>
+    </article>
+  </div>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="assets/rowaida-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
